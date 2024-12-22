@@ -2,6 +2,7 @@
 - Info
     - [Device Info](info/device-info.md)
     - [Fastboot](info/fastboot.md)
+    - [Firmware rollback](info/firmware-rollback.md)
 - Development
     - [Bootloader](dev/bootloader.md)
     - [Partitions](dev/partitions.md)
