@@ -70,7 +70,7 @@ FAILED (remote: 'unknown command')
 **The device claims to be unlockable from fastboot**
 
 ```sh
-$ fastboot flashing unlock
+$ fastboot flashing get_unlock_ability
 
 (bootloader) unlock_ability = 16777216
 ```
