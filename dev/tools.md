@@ -20,3 +20,4 @@ This is a list of tools that helped during the research of information for bootl
 ### Tools for device recovery
 - [SP Flash Tool](https://github.com/progzone122/penangf-sp-flash-tool/releases/tag/0.1) -- SP Flash Tool extracted from RSA (Software Fix) 
 - [Adnroid Utility](https://www.mfdl.io/) - Password: `mfdl`, Utility to send the device into metamode
+- [RSA](https://en-us.support.motorola.com/app/softwarefix) - Useless official software from Motorola for device recovery (in our case works as a wrapper over flash tool, better use just flash tool - get more logs).
