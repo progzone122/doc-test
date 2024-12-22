@@ -119,7 +119,7 @@ So unfortunately not even that works.
 
 [Doesn't work and almost bricked a device.](https://github.com/progzone122/penangf-schematics/issues/1)
 
-The list of the testpoints I've found is [here](./testpoints.md).
+The list of the testpoints I've found is [here](dev/testpoints.md).
 
 For now no other test points that are easily and work accessible are available.
 
