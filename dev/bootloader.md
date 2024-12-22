@@ -46,6 +46,27 @@ Filling the key with random characters just freezes fastboot.
 Same happens with using unlock_critical, with even worse result: The device freezes before being able to press the V+ key.
 
 
+**When using the old oem command to unlock the bootloader**
+
+When using the “oem unlock” command, if the key argument exceeds 54 characters, fastboot will hang and disconnect from the PC.
+
+This may be bruteforce protection or just bad software.
+```sh
+$ fastboot oem unlock 123456789012345678901234567890123456789012345678901234
+
+# Fastboot hung and the device was disconnected from the PC without any logs
+```
+
+Otherwise it will write “unknown command”
+```sh
+$ fastboot oem unlock
+FAILED (remote: 'unknown command')
+
+$ fastboot oem unlock 1234567890
+FAILED (remote: 'unknown command')
+```
+
+
 **The device claims to be unlockable from fastboot**
 
 ```sh
