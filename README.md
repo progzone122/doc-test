@@ -1,6 +1,11 @@
 ## About
 This documentation is dedicated to discoveries made by me and other people interested in unlocking the Moto G23 and Moto G13 bootloader.
 
+> [!WARNING]
+> #### MOTOROLA SHITTY FIRMWARE WARNING 
+> Motorola really has shitty firmware.
+> Carefully read all the warnings in the documentation, and if something doesn’t work - **DO NOT CONTINUE, THERE IS A RISK OF BRICKING YOUR DEVICE!**
+> **Don't cry later and don't say we didn't warn you...**
 
 ### Credits
 
