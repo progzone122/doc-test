@@ -6,6 +6,8 @@ To access fastbootd, you can run `adb reboot bootloader` while the device is boo
 > [!WARNING]
 > DO NOT reboot to fastbootd from fastboot, as it may cause a dm-verity error due to a glitch.
 
+
+
 > ![WARNING]
 > DO NOT USE "fastboot reboot fastboot" to reboot into fastbootd, you will get a soft brick!
 
