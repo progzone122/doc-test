@@ -11,5 +11,6 @@
     - [Metamode](/dev/metamode.md)
     - [Testpoints](/dev/testpoints.md)
     - [TWRP (Custom Recovery)](/dev/twrp.md)
+    - [Boot logs](/dev/logs.md)
     - [Tools](/dev/tools.md)
 - [Forum (More info)](https://github.com/orgs/moto-penangf/discussions)
