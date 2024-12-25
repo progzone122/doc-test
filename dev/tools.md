@@ -10,7 +10,7 @@ This is a list of tools that helped during the research of information for bootl
 - [MTK Driver Auto Installer (Windows)](https://androidmtk.com/download-mtk-driver-auto-installer) -- Automatic Installer for Mediatek USB drivers (Windows)
 
 ### MTKClient
-* [mtkclient](https://aur.archlinux.org/packages/mtkclient-git) -- Utility to work with mtk based devices
+* [mtkclient](https://github.com/bkerler/mtkclient) -- Utility to work with mtk based devices
 * [mtkclient-git AUR (Arch Linux)](https://aur.archlinux.org/packages/mtkclient-git) -- AUR Package for Arch Linux and its derivatives
 * [mtkclient installer (Windows)](https://github.com/netzsworth/mtkclient-installer) -- Automatic MTKClient installer for Windows
 * [Android udev rules (Linux)](https://github.com/M0Rf30/android-udev-rules) -- Udev rules to make android & MTK devices work under Linux
