@@ -1,23 +1,22 @@
-### Partitions
+# Partitions
 
 >[!NOTE]
 > Most sections are only accessible via mtkclient
 
-This is a list of partitions that are of interest for this device:
+## Non-empty partitions which may be of interest
 
 | Partition name                                    | Read | Write |
 |---------------------------------------------------|------|-------|
 | misc                                              | ✅    | ❌     |
 | para                                              | ✅    | ❌     |
+| md_udc                                            | ✅    | ❌     |
 | expdb                                             | ✅    | ❌     |
 | frp                                               | ✅    | ❌     |
 | hw                                                | ✅    | ❌     |
-| uTags                                             | ✅    | ❌     |
-| uTagsBackup                                       | ✅    | ❌     |
+| boot_para                                         | ✅    | ❌     |
 | vbmeta_a<br/>vbmeta_b                             | ✅    | ✅     |
 | vbmeta_system_a<br/>vbmeta_system_b               | ✅    | ✅     |
 | vbmeta_vendor_a<br/>vbmeta_vendor_b               | ✅    | ✅     |
-| md_udc                                            | ✅    | ❌     |
 | metadata                                          | ✅    | ❌     |
 | nvcfg                                             | ✅    | ✅     |
 | nvdata                                            | ✅    | ❌     |
@@ -35,25 +34,35 @@ This is a list of partitions that are of interest for this device:
 | vendor_boot_a<br/>vendor_boot_b                   | ✅    | ✅     |
 | dtbo_a<br/>dtbo_b                                 | ✅    | ❌     |
 | tee_a<br/>tee_b                                   | ✅    | ❌     |
-| sec1                                              | ✅    | ❌     |
 | proinfo                                           | ✅    | ✅     |
-| boot_para                                         | ✅    | ❌     |
 | nvram                                             | ✅    | ✅     |
-| rfcal                                             | ✅    | ❌     |
-| cid                                               | ✅    | ❌     |
-| sp                                                | ✅    | ❌     |
 | elable                                            | ✅    | ✅     |
-| prodber                                           | ✅    | ❌     |
-| kpan                                              | ✅    | ❌     |
-| logs                                              | ✅    | ❌     |
-| carrier                                           | ✅    | ❌     |
-| pad5<br/>pad4<br/>pad3<br/>pad2<br/>pad1<br/>pad0 | ✅    | ❌     |
 | kdebuginfo                                        | ✅    | ❌     |
 | logo                                              | ✅    | ❌     |
 | super                                             | ✅    | ✅     |
 | userdata                                          | ✅    | ❔     |
-| otp                                               | ✅    | ❌     |
 | flashinfo                                         | ✅    | ❌     |
+
+## Empty partitions
+| Partition name                                    | Read | Write |
+|---------------------------------------------------|------|-------|
+| uTags                                             | ✅    | ❌     |
+| uTagsBackup                                       | ✅    | ❌     |
+| sec1                                              | ✅    | ❌     |
+| rfcal                                             | ✅    | ❌     |
+| cid                                               | ✅    | ❌     |
+| sp                                                | ✅    | ❌     |
+| prodper                                           | ✅    | ❌     |
+| kpan                                              | ✅    | ❌     |
+| logs                                              | ✅    | ❌     |
+| carrier                                           | ✅    | ❌     |
+| pad5<br/>pad4<br/>pad3<br/>pad2<br/>pad1<br/>pad0 | ✅    | ❌     |
+| otp                                               | ✅    | ❌     |
+
+
+
+
+This is a list of partitions that are of interest for this device:
 
 * **`lk`** -- LittleKernel partition, cannot be written
 * **`vbmeta`** -- VBMeta partition, can be flashed via mtkclient, but gives a REDSTATE
