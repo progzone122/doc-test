@@ -1,81 +1,59 @@
 ### Partitions
 
+>[!NOTE]
+> Most sections are only accessible via mtkclient
+
 This is a list of partitions that are of interest for this device:
 
-```
-Available partitions:
-DaHandler - misc
-DaHandler - para
-DaHandler - expdb
-DaHandler - frp
-DaHandler - hw
-DaHandler - utags
-DaHandler - utagsBackup
-DaHandler - vbmeta_a
-DaHandler - vbmeta_system_a
-DaHandler - vbmeta_vendor_a
-DaHandler - vbmeta_b
-DaHandler - vbmeta_system_b
-DaHandler - vbmeta_vendor_b
-DaHandler - md_udc
-DaHandler - metadata
-DaHandler - nvcfg
-DaHandler - nvdata
-DaHandler - persist
-DaHandler - protect1
-DaHandler - protect2
-DaHandler - seccfg
-DaHandler - md1img_a
-DaHandler - spmfw_a
-DaHandler - scp_a
-DaHandler - sspm_a
-DaHandler - gz_a
-DaHandler - lk_a
-DaHandler - boot_a
-DaHandler - vendor_boot_a
-DaHandler - dtbo_a
-DaHandler - tee_a
-DaHandler - sec1
-DaHandler - proinfo
-DaHandler - boot_para
-DaHandler - nvram
-DaHandler - rfcal
-DaHandler - cid
-DaHandler - sp
-DaHandler - elable
-DaHandler - prodper
-DaHandler - kpan
-DaHandler - logs
-DaHandler - carrier
-DaHandler - pad5
-DaHandler - pad4
-DaHandler - pad1
-DaHandler - pad0
-DaHandler - kdebuginfo
-DaHandler - logo
-DaHandler - pad2
-DaHandler - md1img_b
-DaHandler - spmfw_b
-DaHandler - scp_b
-DaHandler - sspm_b
-DaHandler - gz_b
-DaHandler - lk_b
-DaHandler - boot_b
-DaHandler - vendor_boot_b
-DaHandler - dtbo_b
-DaHandler - tee_b
-DaHandler - pad3
-DaHandler - super
-DaHandler - userdata
-DaHandler - otp
-DaHandler - flashinfo
-
-```
-
-| Partition name | Read |
-|----------------|  |
-| Content Cell   | Content Cell |
-| Content Cell   | Content Cell |
+| Partition name                                    | Read | Write |
+|---------------------------------------------------|------|-------|
+| misc                                              | ✅    | ❌     |
+| para                                              | ✅    | ❌     |
+| expdb                                             | ✅    | ❌     |
+| frp                                               | ✅    | ❌     |
+| hw                                                | ✅    | ❌     |
+| uTags                                             | ✅    | ❌     |
+| uTagsBackup                                       | ✅    | ❌     |
+| vbmeta_a<br/>vbmeta_b                             | ✅    | ✅     |
+| vbmeta_system_a<br/>vbmeta_system_b               | ✅    | ✅     |
+| vbmeta_vendor_a<br/>vbmeta_vendor_b               | ✅    | ✅     |
+| md_udc                                            | ✅    | ❌     |
+| metadata                                          | ✅    | ❌     |
+| nvcfg                                             | ✅    | ✅     |
+| nvdata                                            | ✅    | ❌     |
+| persist                                           | ✅    | ✅     |
+| protect1                                          | ✅    | ✅     |
+| protect2                                          | ✅    | ✅     |
+| seccfg                                            | ✅    | ❌     |
+| md1img_a<br/>md1img_b                             | ✅    | ❌     |
+| spmfw_a<br/>spmfw_b                               | ✅    | ❌     |
+| scp_a<br/>scp_b                                   | ✅    | ❌     |
+| sspm_a<br/>sspm_b                                 | ✅    | ❌     |
+| gz_a<br/>gz_b                                     | ✅    | ❌     |
+| lk_a<br/>lk_b                                     | ✅    | ❌     |
+| boot_a<br/>boot_b                                 | ✅    | ✅     |
+| vendor_boot_a<br/>vendor_boot_b                   | ✅    | ✅     |
+| dtbo_a<br/>dtbo_b                                 | ✅    | ❌     |
+| tee_a<br/>tee_b                                   | ✅    | ❌     |
+| sec1                                              | ✅    | ❌     |
+| proinfo                                           | ✅    | ✅     |
+| boot_para                                         | ✅    | ❌     |
+| nvram                                             | ✅    | ✅     |
+| rfcal                                             | ✅    | ❌     |
+| cid                                               | ✅    | ❌     |
+| sp                                                | ✅    | ❌     |
+| elable                                            | ✅    | ✅     |
+| prodber                                           | ✅    | ❌     |
+| kpan                                              | ✅    | ❌     |
+| logs                                              | ✅    | ❌     |
+| carrier                                           | ✅    | ❌     |
+| pad5<br/>pad4<br/>pad3<br/>pad2<br/>pad1<br/>pad0 | ✅    | ❌     |
+| kdebuginfo                                        | ✅    | ❌     |
+| logo                                              | ✅    | ❌     |
+| super                                             | ✅    | ✅     |
+| userdata                                          | ✅    | ❔     |
+| otp                                               | ✅    | ❌     |
+| flashinfo                                         | ✅    | ❌     |
 
 * **`lk`** -- LittleKernel partition, cannot be written
 * **`vbmeta`** -- VBMeta partition, can be flashed via mtkclient, but gives a REDSTATE
