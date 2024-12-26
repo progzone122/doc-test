@@ -72,6 +72,11 @@ DaHandler - flashinfo
 
 ```
 
+| Partition name | Read |
+|----------------|  |
+| Content Cell   | Content Cell |
+| Content Cell   | Content Cell |
+
 * **`lk`** -- LittleKernel partition, cannot be written
 * **`vbmeta`** -- VBMeta partition, can be flashed via mtkclient, but gives a REDSTATE
 * **`boot`** -- Boot partition, main interest for root access and can be written via mtkclient, but gives a REDSTATE
