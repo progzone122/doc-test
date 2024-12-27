@@ -21,7 +21,10 @@ Carrier lock on this device is quite easy to remove, so much that even the offic
 1. Download mtkclient [here](https://github.com/bkerler/mtkclient/)
 2. Download the unlock_elable.img file from the fuckyoumoto repo [here](https://github.com/moto-penangf/fuckyoumoto/raw/refs/heads/main/sources/unlock_elable.img)
 3. Get the device DA file from [here](https://github.com/moto-penangf/fuckyoumoto/raw/refs/heads/main/sources/MT6768_USER.bin) and the preloader from [here](https://github.com/moto-penangf/fuckyoumoto/raw/refs/heads/main/sources/preloader_penangf.bin)
-3. Run `mtk w elable <path-to-unlock_elable.img> --preloader preloader_penangf.bin --loader MT6768_USER.bin`
+3. Run 
+```sh
+$ mtk w elable <path-to-unlock_elable.img> --preloader preloader_penangf.bin --loader MT6768_USER.bin`
+```
 
 ## Alternative method
 
