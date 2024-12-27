@@ -1,6 +1,7 @@
 - [About](/README.md)
 - Info
     - [Device Info](/info/device-info.md)
+    - [Carrier lock](/info/carrier_lock.md)
     - [Fastboot](/info/fastboot.md)
     - [Firmware rollback](/info/firmware-rollback.md)
     - [AVB (Android Verify Boot)](/info/avb.md)
