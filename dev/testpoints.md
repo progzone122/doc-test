@@ -2,14 +2,6 @@
 
 ## Moto G23
 
-> [!WARNING]
-> #### BE CAREFUL WITH UART CONNECTION
-> There is a possibility that this could **throw off the battery calibration or even break the charge controller** (Still investigating what happened)
-> 
-> **Sources:**  
-> [Incident](https://github.com/orgs/moto-penangf/discussions/2)  
-> [Even more information about the incident](https://github.com/moto-penangf/penangf-schematics/issues/1#issuecomment-2558088916)
-
 * [MB FRONT](#front)
 * [MB BACK](#back)
 * [eMMC](#emmc)
