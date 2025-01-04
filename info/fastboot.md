@@ -13,9 +13,10 @@ To access fastbootd, you can run `adb reboot bootloader` while the device is boo
 
 ```sh
 fastboot getvar all
-fastboot oem unlock <KEY> # fastboot will hang and will no longer be detected. Уou will have to reboot
 fastboot flashing get_unlock_ability
-fastboot flashing unlock # (doesn't unlock)
-fastboot flashing unlock_critical # (freezes fastboot and doesn't unlock)
+fastboot flashing unlock
+fastboot flashing unlock_critical
 fastboot reboot
+fastboot oem key <KEY>
+fastboot oem get_key
 ```

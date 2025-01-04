@@ -27,6 +27,16 @@ Thus it's not possible to unlock the bootloader by any official means.
 
 ### With fastboot?
 
+**The device claims to be unlockable from fastboot**
+
+```sh
+$ fastboot flashing get_unlock_ability
+
+(bootloader) unlock_ability = 16777216
+```
+
+In this case the number is equal to 2^24 (24th bit), which seem to mean **unlockable under certain conditions**
+
 The device has a mediatek SoC, so trying with the flashing unlock command:
 
 ```sh
@@ -40,42 +50,47 @@ fastboot: error: Command Failed
 
 It requires an unlock key, like all Motorola Devices.
 
-Filling the key with random characters just freezes fastboot.
+> [!NOTE]
+> The command to install and dump the key was discovered by [DiabloSat](https://github.com/progzone122) with support from [Shomy](https://github.com/shomykohai)
+In order to specify the key, we need to run the fastboot oem key <KEY> command.
 
-
-Same happens with using unlock_critical, with even worse result: The device freezes before being able to press the V+ key.
-
-
-**When using the old oem command to unlock the bootloader**
-
-When using the “oem unlock” command, if the key argument exceeds 54 characters, fastboot will hang and disconnect from the PC.
-
-This may be bruteforce protection or just bad software.
-```sh
-$ fastboot oem unlock 123456789012345678901234567890123456789012345678901234
-
-# Fastboot hung and the device was disconnected from the PC without any logs
-```
-
-Otherwise it will write “unknown command”
-```sh
-$ fastboot oem unlock
-FAILED (remote: 'unknown command')
-
-$ fastboot oem unlock 1234567890
-FAILED (remote: 'unknown command')
-```
-
-
-**The device claims to be unlockable from fastboot**
+#### Dump of the current oem key 
+Just in case, make a dump of the current oem key
 
 ```sh
-$ fastboot flashing get_unlock_ability
-
-(bootloader) unlock_ability = 16777216
+$ fastboot oem get_key
+(bootloader) **1A****042B2A****97***60C***FBC
+(bootloader) finish dump
+OKAY [  0.000s]
+Finished. Total time: 0.000s
 ```
 
-In this case the number is equal to 2^24 (24th bit), which seem to mean **unlockable under certain conditions**
+#### Install oem key to unlock
+
+```sh
+$ fastboot oem key **1A****042B2A****97***60C***FBC
+(bootloader) open fastboot unlock
+OKAY [  0.000s]
+Finished. Total time: 0.000s
+```
+
+**Now we can try to unlock the bootloader!**
+
+> [!NOTE]
+> As you can see, unlocking the bootloader with the default key didn't help.
+> We need to try bruteforce key and we'll update the info in the documentation and make a script if it works!
+
+```sh
+$ fastboot flashing unlock
+(bootloader) Start unlock flow
+
+(bootloader) **1A****042B2A****97***60C***FBC
+(bootloader) start fastboot unlock
+(bootloader) **1A****042B2A****97***60C***FBC
+FAILED (remote: 'Unlock key code is incorrect!')
+fastboot: error: Command failed
+```
+
 
 
 ### Using mtkclient
