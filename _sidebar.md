@@ -8,10 +8,10 @@
     - [DM-Verity](/info/dm-verity.md)
 - Boot modes
   - [PCS](/modes/pcs.md)
+  - [META](/modes/metamode.md)
 - Development
     - [Bootloader](/dev/bootloader.md)
     - [Partitions](/dev/partitions.md)
-    - [Metamode](/dev/metamode.md)
     - [Testpoints](/dev/testpoints.md)
     - [TWRP (Custom Recovery)](/dev/twrp.md)
     - [Boot logs](/dev/logs.md)
