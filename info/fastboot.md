@@ -15,8 +15,11 @@ To access fastbootd, you can run `adb reboot bootloader` while the device is boo
 fastboot getvar all
 fastboot flashing get_unlock_ability
 fastboot flashing unlock
-fastboot flashing unlock_critical
 fastboot reboot
 fastboot oem key <KEY>
 fastboot oem get_key
 ```
+
+> [!INFO]
+> On the moto g23 and g13, `fastboot flashing unlock_critical` doesn't exist, and instead treats `_critical` as the buffer for
+> `fastboot flashing unlock`, making the phone freeze
