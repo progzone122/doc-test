@@ -16,8 +16,7 @@ There are **two ways** to boot into PCS mode - using the **VOL- button** or usin
 ### Using VOL- button
 1. Connect the switched off phone to a PC
 2. Wait until Preloader mode is disabled and the gray battery icon appears
-
-    <img src="../files/assets/pcs-mode-battery.jpg" width="200">
+   ![Image](../files/assets/pcs-mode-battery.jpg)
    
 3. Press and hold the VOL- button until the phone is detected by the computer
 
