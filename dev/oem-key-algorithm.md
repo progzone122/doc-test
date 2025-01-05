@@ -1,6 +1,7 @@
 # OEM key generation algorithm
 > [!NOTE]
 > In the process of learning new information. The information may be incorrect
+> if you have any information that you think might be useful - [send a message in the forum topic “OEM key generation algorithm”](https://github.com/orgs/moto-penangf/discussions/10)
 
 ## Example of a valid key
 ```text
