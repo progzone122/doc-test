@@ -18,6 +18,13 @@ fastboot flashing unlock
 fastboot reboot
 fastboot oem key <KEY>
 fastboot oem get_key
+fastboot oem get_socid
+fastboot oem p2u <on/off> # sets UART logs
+fastboot oem dump_pllk_log # dumps preloader and lk logs
+fastboot oem lks # Return the lockstate (1 -> locked, 0 -> unlocked)
+fastboot oem scp_status # Crashes fastboot
+fastboot oem scp_log_thru_ap_uart <on/off> # Redirects SCP (I don't know what it is) to UART
+fastboot oem usb2jtag <1/0> # I think it allows to use a modded usb cable as a JTAG?
 ```
 
 > [!INFO]
