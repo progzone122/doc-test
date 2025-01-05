@@ -13,6 +13,7 @@
     - [Bootloader](/dev/bootloader.md)
     - [Partitions](/dev/partitions.md)
     - [Testpoints](/dev/testpoints.md)
+    - [OEM Key algorithm](/dev/oem-key-algorithm.md)
     - [TWRP (Custom Recovery)](/dev/twrp.md)
     - [Boot logs](/dev/logs.md)
     - [Tools](/dev/tools.md)
