@@ -30,3 +30,6 @@ The mtkclient utility gives **not only SOC_ID** (it is a combination of two keys
 This can be useful for key generation
 
 ![mtkclient-keys-info.png](../files/assets/mtkclient-keys-info.png)
+
+## Useful links
+- [mt6765 little-kernel source code](https://github.com/moto-penangf/lk-mt6765)
