@@ -23,3 +23,10 @@ There is a possibility that the OEM key is an md5 hash, because when generating 
 | text                 | 1cb251ec0d568de6a929b520c4aed8d1  | 32     |
 | TEXT                 | 61a96ffcb251bb9bf0abf8fec19d0ea8  | 32     |
 | abcdef12345678901234 | 1cddda3f419e889d62234b91466400a7  | 32     |
+
+## More input data with mtkclient
+The mtkclient utility gives **not only SOC_ID** (it is a combination of two keys from the ```fastboot oem get_socid``` command), but **also outputs ME_ID, EMMC CID and so on**
+
+This can be useful for key generation
+
+![mtkclient-keys-info.png](../files/assets/mtkclient-keys-info.png)
