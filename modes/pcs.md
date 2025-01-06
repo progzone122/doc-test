@@ -9,6 +9,8 @@ It's not known what the mode is, we just discovered it by accident
 - It's definitely not BROM / Preloader
 - MtkClient / FlashTool does not detect the phone after booting into this mode
 - If you disconnect the phone from the PC - it will continue to be in this mode
+- The phone seems to go into this mode if there is some kind of failure (like a short circuit)
+- If you boot the phone to system with USB debugging, the phone will be operated with the same VID, but the PID will still be different
 
 ## Boot to PCS mode
 There are **two ways** to boot into PCS mode - using the **VOL- button** or using **KPCOL testpoint**
