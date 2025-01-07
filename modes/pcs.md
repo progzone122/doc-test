@@ -12,6 +12,15 @@ It's not known what the mode is, we just discovered it by accident
 - The phone seems to go into this mode if there is some kind of failure (like a short circuit)
 - If you boot the phone to system with USB debugging, the phone will be operated with the same VID, but the PID will still be different
 
+## WTF MIDI?
+It turns out that the device VID and PID match when **MIDI mode is enabled without USB debugging**.
+
+However, MIDI is essentially **a communication protocol**. 
+
+Taking into account that the phone switches to this mode in case of hardware failures (e.g. short circuit) and has a special combination to activate the mode even when the phone is off.
+
+Perhaps this protocol is used to organize communication while flashing the device in emergency mode? 
+
 ## Boot to PCS mode
 There are **two ways** to boot into PCS mode - using the **VOL- button** or using **KPCOL testpoint**
 
