@@ -22,7 +22,7 @@ Taking into account that the phone switches to this mode in case of hardware fai
 Perhaps this protocol is used to organize communication while flashing the device in emergency mode? 
 
 ## Boot to PCS mode
-There are **two ways** to boot into PCS mode - using the **VOL- button** or using **KPCOL testpoint**
+There are **three ways** to boot into PCS mode - using the **VOL- button** or using **KPCOL testpoint**
 
 ### Using VOL- button
 1. Connect the switched off phone to a PC
@@ -33,6 +33,14 @@ There are **two ways** to boot into PCS mode - using the **VOL- button** or usin
 1. Connect the switched off phone to a PC
 2. Wait until Preloader mode is disabled and the gray battery icon appears
 3. Short the testpoint KPCOL to GND
+
+### Make a short circuit on the board
+> [!WARNING]
+> IT'S VERY RISKY! Use other ways, but we have to mention it
+
+In the case of a brief short circuit involving certain non-critical components, such as capacitors, which theoretically should not cause significant damage to the device, **this could be interpreted as a glitch.**
+
+As a result, **the device would forcibly switch to PCS MIDI mode.**
 
 ![Image](../files/assets/pcs-mode-kpcol0.png)
 
