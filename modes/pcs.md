@@ -34,6 +34,8 @@ There are **three ways** to boot into PCS mode - using the **VOL- button** or us
 2. Wait until Preloader mode is disabled and the gray battery icon appears
 3. Short the testpoint KPCOL to GND
 
+![Image](../files/assets/pcs-mode-kpcol0.png)
+
 ### Make a short circuit on the board
 > [!WARNING]
 > IT'S VERY RISKY! Use other ways, but we have to mention it
@@ -41,8 +43,6 @@ There are **three ways** to boot into PCS mode - using the **VOL- button** or us
 In the case of a brief short circuit involving certain non-critical components, such as capacitors, which theoretically should not cause significant damage to the device, **this could be interpreted as a glitch.**
 
 As a result, **the device would forcibly switch to PCS MIDI mode.**
-
-![Image](../files/assets/pcs-mode-kpcol0.png)
 
 ## Phone Detection in PCS Mode
 On Linux and Windows, the device is detected differently in this mode
