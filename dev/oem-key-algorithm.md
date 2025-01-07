@@ -33,5 +33,16 @@ This can be useful for key generation
 
 ![mtkclient-keys-info.png](../files/assets/mtkclient-keys-info.png)
 
+## sha256?
+
+After further analysis of the inner function of fastboot, it looks like the first 32 characters of soc_id are used for bootloader unlocking (hence why we're probably allowed to change the serial number without succeeding in exploiting this for bootloader unlock).
+
+Some notes:
+* Fastboot for some reason wants `fastboot oem key` to be run before flashing unlock, or it won't fill the SoC ID into the stack to hash it later. 
+
+* Only the first 32 characters of the hash are used 
+* The string is compared for the first 32 characters, after that it doesn't get check (it cannot be exploited though as we must use 32 character unlock keys anyway to feed the key to fastboot) 
+
+
 ## Useful links
 - [mt6765 little-kernel source code](https://github.com/moto-penangf/lk-mt6765)
