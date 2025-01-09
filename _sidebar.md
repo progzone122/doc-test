@@ -17,5 +17,6 @@
     - [OEM Key algorithm](/dev/oem-key-algorithm.md)
     - [TWRP (Custom Recovery)](/dev/twrp.md)
     - [Boot logs](/dev/logs.md)
+    - [Decompilation](/dev/decompilation.md)
     - [Tools](/dev/tools.md)
 - [Forum (More info)](https://github.com/orgs/moto-penangf/discussions)
