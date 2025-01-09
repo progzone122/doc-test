@@ -1,3 +1,5 @@
+# Fastboot
+
 ## Available commands and mode for fastboot:
 
 ### Access fastbootd:

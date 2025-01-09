@@ -2,11 +2,11 @@
 - Info
     - [Device Info](/info/device-info.md)
     - [Carrier lock](/info/carrier_lock.md)
-    - [Fastboot](/info/fastboot.md)
     - [Firmware rollback](/info/firmware-rollback.md)
     - [AVB (Android Verify Boot)](/info/avb.md)
     - [DM-Verity](/info/dm-verity.md)
 - Boot modes
+  - [Fastboot](/modes/fastboot.md)
   - [Preloader](/modes/preloader.md) 
   - [PCS](/modes/pcs.md)
   - [META](/modes/metamode.md)
