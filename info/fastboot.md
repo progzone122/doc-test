@@ -1,7 +1,7 @@
 ## Available commands and mode for fastboot:
 
 ### Access fastbootd:
-To access fastbootd, you can run `adb reboot bootloader` while the device is booted normally.
+To access fastbootd, you can run `adb reboot fastboot` while the device is booted normally.
 
 > [!WARNING]
 > DO NOT reboot to fastbootd from fastboot, as it may cause a dm-verity error due to a glitch.
