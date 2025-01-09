@@ -1,7 +1,8 @@
 ## Unlock bootloader
 
 > [!NOTE] 
-> Currently there's no known way to unlock the bootloader.
+> Currently there's no known way to unlock the bootloader.<br>
+> Investigations are going on to figure out how to unlock it, check the forum and updates in this documentation.
 
 ### Discoveries
 
