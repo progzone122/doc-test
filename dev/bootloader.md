@@ -79,6 +79,8 @@ Finished. Total time: 0.000s
 > [!NOTE]
 > As you can see, unlocking the bootloader with the default key didn't help.
 > We need to try bruteforce key and we'll update the info in the documentation and make a script if it works!
+>
+> Update: brute forcing won't work because of fastboot timeout, but a keygen could be possible by decompiling lk and finding reversing the algorithm which checks the key.
 
 ```sh
 $ fastboot flashing unlock
@@ -111,7 +113,7 @@ We can only interact with the preloader.
 $ mtk r seccfg seccfg.bin --loader DA_PL_NO_CERT_V6.bin --preloader preloader_penangf.bin > logs.txt
 ```
 
-Thanks to [@DiabloSat](https://github.com/progzone122), another [DA Agent](https://github.com/moto-penangf/penangf-sp-flash-tool/releases/download/0.1/MT6768_USER.bin) was found that works with mtkclient.
+Thanks to [@DiabloSat](https://github.com/progzone122), another [DA](https://github.com/moto-penangf/penangf-sp-flash-tool/releases/download/0.1/MT6768_USER.bin) was found that works with mtkclient.
 From now one, this will be used instead of the official one, as it provides more features and better outputs with mtkclient.
 
 
