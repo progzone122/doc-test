@@ -20,6 +20,9 @@
 > These points still haven't been tested though.
 > 
 > DON'T use these points if you don't know what you're doing.
+>
+> Update: We're not sure yet if these are the correct TP, or if they are TP at all, click [here](https://github.com/orgs/moto-penangf/discussions/1#discussioncomment-11779194) for more information.<br>
+> DO NOT ATTEMPT TO USE THEM.
 
 ![](../files/assets/eMMC_test_points.png)
 
