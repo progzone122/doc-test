@@ -1,5 +1,45 @@
 # Fastboot
 
+## Boot to Fastboot mode
+There are many ways to boot into Fastboot mode, you can use one of the last complicated ways if for some reason you can't boot into Fastboot.
+
+### Using ADB command
+- Enable USB debugging
+- Connect the phone to PC, run ```adb devices``` command and confirm USB debugging if you have not connected the phone to the current PC via adb before
+- Run the command via adb to reboot into fastboot
+    ```sh
+    adb reboot bootloader
+    ```
+
+### Using VOL- & POWER button
+- Power off phone
+- **Hold down the VOL- & POWER buttons** and wait for fastboot mode to load
+
+### Using VOL- button & USB connection
+- Power off phone
+- **Hold down the VOL- button and connect the phone to the PC** and wait for fastboot to load
+
+### Using Serial Command in Preloader Mode
+- Power off phone
+- Install MTK driver _(If you have Windows)_ - [See tools](../dev/tools.md)
+- Clone [fuckyoumoto repository](https://github.com/moto-penangf/fuckyoumoto)
+- Install dependencies
+    ```shell
+    pip install -r requirements.txt
+    ```
+- Run ``mtkbootcmd.py`` script
+    ```shell
+    python mtkbootcmd.py FASTBOOT
+    ```
+- Connect the phone to PC (It should be detected as Preloader)
+
+### Using KPCOL0 TestPoint
+- Power off phone
+- Short the testpoint KPCOL to GND
+- Hold down the shorted testpoint, connect the phone to the PC
+
+![Image](../files/assets/pcs-mode-kpcol0.png)
+
 ## Available commands and mode for fastboot:
 
 ### Access fastbootd:
