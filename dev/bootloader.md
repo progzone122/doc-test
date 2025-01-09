@@ -80,7 +80,7 @@ Finished. Total time: 0.000s
 > As you can see, unlocking the bootloader with the default key didn't help.
 > We need to try bruteforce key and we'll update the info in the documentation and make a script if it works!
 >
-> Update: brute forcing won't work because of fastboot timeout, but a keygen could be possible by decompiling lk and finding reversing the algorithm which checks the key.
+> Update: brute forcing won't work because of fastboot timeout, but a keygen could be possible by decompiling lk and reversing the algorithm which checks the key.
 
 ```sh
 $ fastboot flashing unlock
