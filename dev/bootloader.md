@@ -134,12 +134,20 @@ So unfortunately not even that works.
 
 ### Testpoints?
 
-[Doesn't work and almost bricked a device.](https://github.com/moto-penangf/penangf-schematics/issues/1)
+Testpoints are [still being investigated](https://github.com/orgs/moto-penangf/discussions/1).
+
+**BROM:**<br>
+As for now, we're investigating the possibility of accessing brom through a combination of keys (read [decompilation](/dev/decompilation.md)).<br>
+The suspected TP for BROM is KPCOL0, located at the back of the board.<br>
+
+Though, we would need to use it in combination with two other keys: Power and Vol+.
+
+
+**UART:**<br>
+[Almost bricked a device.](https://github.com/moto-penangf/penangf-schematics/issues/1)
+Further testing is needed.<br>
+I suspect to enable UART we need to run `fastboot oem p2u` first.
+
+
 
 The list of the testpoints I've found is [here](testpoints.md).
-
-For now no other test points that are easily and work accessible are available.
-
-
-
-
