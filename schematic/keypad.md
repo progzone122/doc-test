@@ -50,6 +50,6 @@ KPCOL1 testpoint unlike KPCOL0 does not have an available testpoint to activate 
 >
 > Only use this information if you know what you are doing!
 
-Since Motorola hasn't created a testpoint for us to do this, why not use the contact between the resistor and the KPCOL1 line?
+Since Motorola hasn't created a testpoint for us to do this, why not use the contact between the capacitor and the KPCOL1 line?
 
 ![image3.PNG](../files/assets/schematic/kpcol1/image3.PNG)
