@@ -49,9 +49,13 @@ void platform_emergency_download(int timeout)
 The code for the download keys in the moto g23/g13 is the following:
 
 ```c
+#define KPDL1 KPCOL0 // 0
+#define KPDL2 PWRKEY_HW // 8
+#define KPDL3 HOMEKEY_RST // 17
+
 bool are_dl_keys_pressed()
 {
-    if(mtk_detect_key(0) && mtk_detect_key(8) && mtk_detect_key(17))
+    if(mtk_detect_key(KPDL1) && mtk_detect_key(KPDL2) && mtk_detect_key(KPDL3))
     {
         pr_debug("dl keys are pressed\n");
         return true;
