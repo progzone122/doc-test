@@ -77,16 +77,20 @@ By analyzing the logs, we were able to assign the following values to the keys:
 The `mtk_detect_key(int key)` outputs a different string based on what button is pressed:
 
 ```c
+#define MTK_PMIC_RST_KEY HOMEKEY_RST // 17
+
+#define KEYPAD_MAX_NUM 0x47
+
 bool mtk_detect_key(int key)
 {
     bool ret;
     char msg[128];
 
-    if (key > 0x47){
+    if (key > KEYPAD_MAX_NUM){
         return false;
     }
 
-    if (key == 8){
+    if (key == PWRKEY_HW){
         ret = is_power_key_pressed();
         
         if(ret != 1){
@@ -97,7 +101,7 @@ bool mtk_detect_key(int key)
     }
     else
     {
-        if (key != 17){
+        if (key != MTK_PMIC_RST_KEY){
             if(....) // This check is still to get decompiled, but I assume it confirms that any other key is pressed based on the context
             {
                 pr_debug("key %d is pressed\n", key);
