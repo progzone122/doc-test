@@ -14,7 +14,7 @@ This documentation is dedicated to discoveries made by me and other people inter
 ## Contributing
 
 For any new discovery made that is still not on this documentation, please send a Pull Request or open an issue on [our documentation repo](https://github.com/moto-penangf/documentation) describing the discovery.<br>
-For discoveries not yet assessed, consider starting a new discussion [here](https://github.com/moto-penangf/discussions) for further analysis.
+For discoveries not yet assessed, consider starting a new discussion [here](https://github.com/orgs/moto-penangf/discussions) for further analysis.
 
 ## Credits
 
