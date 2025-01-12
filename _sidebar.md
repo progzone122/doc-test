@@ -20,5 +20,5 @@
     - [Decompilation](/dev/decompilation.md)
     - [Tools](/dev/tools.md)
 - Schematic analysis
-  - [KEYPAD](schematic/keypad.md)
+  - [KEYPAD](/schematic/keypad.md)
 - [Forum (More info)](https://github.com/orgs/moto-penangf/discussions)
