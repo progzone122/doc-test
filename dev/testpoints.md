@@ -31,4 +31,5 @@
 ### JTAG:
 ![](../files/assets/jtag.png)
 
-
+### More testpoints?
+Also, although we don't have testpoints for this, we still have the ability to access [KPCOL1](../schematic/keypad.md#kpcol1), [PWRKEY_SW](../schematic/control-if.md#pwrkey_sw), [HOMEKEY_SW](../schematic/control-if.md#homekey_sw).
