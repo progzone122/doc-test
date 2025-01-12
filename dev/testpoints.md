@@ -8,7 +8,8 @@
 * [JTAG](#jtag)
 
 ### FRONT:
-![](../files/assets/mainboard-front.jpg)
+![](../files/assets/mainboard-front.png)
+*FRONT PICTURE PROVIDED BY [DiabloSat](https://github.com/progzone122)*
 
 ### BACK:
 ![](../files/assets/mainboard-back.png)
