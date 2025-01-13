@@ -5,6 +5,7 @@
     - [Firmware rollback](/info/firmware-rollback.md)
     - [AVB (Android Verify Boot)](/info/avb.md)
     - [DM-Verity](/info/dm-verity.md)
+    - [Disassembly guide](/info/disassembly.md)
 - Boot modes
   - [Fastboot](/modes/fastboot.md)
   - [Preloader](/modes/preloader.md) 
