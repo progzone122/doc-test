@@ -64,13 +64,16 @@
 
 This is a list of partitions that are of interest for this device:
 
-* **`lk`** -- LittleKernel partition, cannot be written
+* **`lk`** -- LittleKernel partition, cannot be written with mtkclient, but only with flash tool.
 * **`vbmeta`** -- VBMeta partition, can be flashed via mtkclient, but gives a REDSTATE
 * **`boot`** -- Boot partition, main interest for root access and can be written via mtkclient, but gives a REDSTATE
 
 
 * **`nvram`** -- Contains the IMEI and other device specific information, make a backup
-* **`elable`** -- Carrier Lock partition, can be flashed. Flash empty elable.img from firmware to remove carrier lock. Could be a typo of e-label. 
-* **`frp`** Factory Reset Protection partition. Also saves if OEM Unlocked is enabled in Developer settings. Can be reset with specific tools, and maybe mtkclient (not tested). 
+* **`elable`** -- Carrier Lock partition, can be flashed. Flash empty elable.img from firmware to remove carrier lock. Confirmed to be a typo of e-label. 
+* **`frp`** -- Factory Reset Protection partition. Also saves if OEM Unlocked is enabled in Developer settings. Can be reset with specific tools, and maybe mtkclient (not tested). 
+
+* **`seccfg`** -- Contains security configurations, such as SBC State (Secure boot), lock state (bootloader unlocked or not). Lock state is V4 for Moto g13/g23. Cannot be written by mtkclient from preloader.
+* **`proinfo`** -- Contains serial number. Can be written by mtkclient.
 
 To backup all the important partitions, use the [Backup Critical Partition](https://github.com/moto-penangf/fuckyoumoto/blob/main/backup_critical_partitions.sh) script from [DiabloSat](https://github.com/moto-penangf/fuckyoumoto/)
