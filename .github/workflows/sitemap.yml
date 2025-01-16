@@ -17,7 +17,6 @@ jobs:
       - name: Build Sitemap
         run: |
           git pull --rebase
-          cd /
           ./generate_sitemap.sh
 
       - name: Commit Updated
