@@ -1,4 +1,4 @@
-- [About](/README.md)
+- [About](/doc-test/README.md)
 - Info
     - [Device Info](/doc-test/info/device-info.md)
     - [Carrier lock](/doc-test/info/carrier_lock.md)
