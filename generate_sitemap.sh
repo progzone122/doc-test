@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sitemap="sitemap.xml"
-website_link="https://notes.qq52o.me"
+website_link="https://moto-penangf.github.io/documentation"
 ignore=(
 _sidebar.md
 _coverpage.md
